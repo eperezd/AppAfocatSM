@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center|center_horizontal"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="204dp"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
+        android:text="Reportar Accidente: ingrese la placa del vehiculo" />
+
+    <EditText
+        android:id="@+id/textPlacaVehiculo"
+        android:layout_width="242dp"
+        android:layout_height="48dp"
+        android:ems="10"
+        android:maxLength="9"
+        android:hint="Ingrese la Placa"
+        android:inputType="textCapCharacters"
+        />
+
+    <EditText
+        android:id="@+id/editTextPhone"
+        android:layout_width="242dp"
+        android:layout_height="48dp"
+        android:hint="Celular de Contacto"
+        android:inputType="phone"
+        android:maxEms="9"
+        android:maxLength="9" />
+
+    <Button
+        android:id="@+id/buttonReportarSiniestro"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
+        android:text="Buscar" />
+
+    <TextView
+        android:id="@+id/textViewPlaca"
+        android:layout_width="249dp"
+        android:layout_height="35dp"
+        android:text="Placa" />
+
+    <TextView
+        android:id="@+id/textViewinicioV"
+        android:layout_width="250dp"
+        android:layout_height="35dp"
+        android:text="Inicio de Vigencia" />
+
+    <TextView
+        android:id="@+id/textViewFinV"
+        android:layout_width="250dp"
+        android:layout_height="35dp"
+        android:text="Fin de vigencia" />
+
+    <TextView
+        android:id="@+id/textViewCat"
+        android:layout_width="250dp"
+        android:layout_height="35dp"
+        android:text="Nro CAT" />
+
+    <TextView
+        android:id="@+id/textViewAsociado"
+        android:layout_width="250dp"
+        android:layout_height="35dp"
+        android:text="Asociado" />
+
+    <TextView
+        android:id="@+id/textViewpaterno"
+        android:layout_width="249dp"
+        android:layout_height="35dp"
+
+        android:text=" " />
+
+    <TextView
+        android:id="@+id/textViewmaterno"
+        android:layout_width="249dp"
+        android:layout_height="35dp"
+        android:text=" " />
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/floatingActionButton2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="right"
+        android:clickable="true"
+        app:backgroundTint="@color/teal_200"
+        tools:srcCompat="@android:drawable/ic_menu_call" />
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/floatingActionButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="right"
+        android:clickable="true"
+        android:onClick="mostrarNosocomios"
+        app:backgroundTint="@color/teal_200"
+        app:srcCompat="@android:drawable/ic_menu_save" />
+
+</LinearLayout>
